@@ -13,6 +13,11 @@ interface SportCardProps {
 export default function SportCard({ sport, onClick }: SportCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
+  const handleRegisterClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // Prevent triggering onClick of parent
+    window.open("https://forms.gle/ZKAoBAmnrGrg6x9D8", '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <motion.div
       className="relative overflow-hidden rounded-xl bg-gray-800 shadow-xl cursor-pointer h-64"
@@ -70,15 +75,38 @@ export default function SportCard({ sport, onClick }: SportCardProps) {
               <span className="mr-1">📍</span>
               <span>{sport.venue}</span>
             </div>
-            <motion.button 
-              className="px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-              whileHover={{ scale: 1.05 }}
-            >
-              View Details
-            </motion.button>
+            <div className="flex gap-2">
+              <motion.button 
+                className="px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-blue-500 to-purple-600 text-white"
+                whileHover={{ scale: 1.05 }}
+              >
+                View Details
+              </motion.button>
+              <motion.button 
+                onClick={handleRegisterClick}
+                className="px-3 py-1 text-sm font-medium rounded-full bg-gradient-to-r from-pink-500 to-red-600 text-white"
+                whileHover={{ scale: 1.05 }}
+              >
+                Register
+              </motion.button>
+            </div>
           </div>
         </motion.div>
       </div>
+
+      {/* Registration button in top right */}
+      {/* <div className="absolute top-2 right-2 z-30">
+        <motion.button
+          onClick={handleRegisterClick}
+          className="p-2 bg-pink-500 rounded-full text-white shadow-md"
+          initial={{ opacity: 0.7 }}
+          whileHover={{ opacity: 1, scale: 1.1 }}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 0L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+        </motion.button>
+      </div> */}
     </motion.div>
   );
 } 

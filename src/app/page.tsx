@@ -71,6 +71,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
+          className="flex gap-4 flex-wrap justify-center"
         >
           <button 
             onClick={() => window.scrollTo({
@@ -81,6 +82,14 @@ export default function Home() {
           >
             Explore Events
           </button>
+          <a 
+            href="https://forms.gle/ZKAoBAmnrGrg6x9D8"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:opacity-90 transition-opacity duration-300"
+          >
+            Register Now
+          </a>
         </motion.div>
       </header>
 
@@ -175,13 +184,35 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        <div className="mt-12 text-center">
+          <a 
+            href="https://forms.gle/ZKAoBAmnrGrg6x9D8" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-10 py-4 rounded-full text-xl font-bold hover:opacity-90 transition-opacity shadow-lg"
+          >
+            Register for Events
+          </a>
+          <p className="mt-4 text-white/80">Registration deadline: April 20, 2025</p>
+        </div>
       </section>
 
       {/* Footer */}
       <footer className="bg-black/50 py-10 mt-20">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl font-bold mb-4">Zia Sports Fest</h2>
-          <p className="mb-6">Join us for the ultimate sports experience</p>
+          <p className="mb-4">Join us for the ultimate sports experience</p>
+          <div className="mb-6">
+            <a 
+              href="https://forms.gle/ZKAoBAmnrGrg6x9D8" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:opacity-90 transition-opacity"
+            >
+              Register Now
+            </a>
+          </div>
           <div className="flex justify-center gap-4 mb-6">
             <a href="https://www.instagram.com/zia_sports_fest" className="text-white hover:text-yellow-300 transition-colors">
               <span className="sr-only">Instagram</span>

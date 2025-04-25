@@ -49,7 +49,7 @@ export const sportsEvents: SportEvent[] = [
         contact: "+91 8979488426"
       },
     ],
-    formLink: "https://forms.gle/ZKAoBAmnrGrg6x9D8"
+    formLink: "https://forms.gle/3QsL4Mrf9K1xnqeZ6"
   },
   {
     id: "volleyball",
@@ -78,7 +78,7 @@ export const sportsEvents: SportEvent[] = [
         contact: "+91 8279848164"
       },
     ],
-    formLink: "https://forms.gle/ZKAoBAmnrGrg6x9D8"
+    formLink: "https://forms.gle/3QsL4Mrf9K1xnqeZ6"
   },
   {
     id: "basketball",
@@ -107,7 +107,7 @@ export const sportsEvents: SportEvent[] = [
         contact: "+91 8279848164"
       },
     ],
-    formLink: "https://forms.gle/ZKAoBAmnrGrg6x9D8"
+    formLink: "https://forms.gle/3QsL4Mrf9K1xnqeZ6"
   },
   {
     id: "badminton",
@@ -136,7 +136,7 @@ export const sportsEvents: SportEvent[] = [
         contact: "+91 8171727590"
       },
     ],
-    formLink: "https://forms.gle/ZKAoBAmnrGrg6x9D8"
+    formLink: "https://forms.gle/3QsL4Mrf9K1xnqeZ6"
   },
   {
     id: "hockey",
@@ -165,7 +165,7 @@ export const sportsEvents: SportEvent[] = [
         contact: "+91 "
       },
     ],
-    formLink: "https://forms.gle/ZKAoBAmnrGrg6x9D8"
+    formLink: "https://forms.gle/3QsL4Mrf9K1xnqeZ6"
   },
   {
     id: "dodge-ball",
